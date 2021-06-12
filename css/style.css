@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 0.75rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+/*utitilty classes*/
+.text-primary {
+  color: rgb(114, 114, 214);
+  text-align: center;
+}
+.text-custom {
+  color: #f1f1f1;
+}
+.text-secondary {
+  color: rgb(11, 11, 61);
+}
+.text-center {
+  text-align: center;
+}
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.m-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+.h-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+.lead {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+
+}
+.btn {
+  color: #fff;
+  background: rgb(114, 114, 214);
+  padding: 1rem 2.2rem;
+  border: none;
+  border-radius: 5px;
+  
+}
+.btn:hover {
+  background: rgb(44, 44, 87);
+  cursor: pointer;
+}
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  overflow: hidden;
+  
+}
+.productContainer {
+  height: 50vh;
+}
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+.bg-light {
+  background: #fff;
+  color: #333;
+}
+.bg-primary {
+  background: rgb(103, 103, 161);
+  color: #fff;
+}
+.pm {
+  padding-bottom: 10px;
+}
+/*navabar*/
+/* #navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+} */
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: .4rem;
+  z-index: 2;
+}
+.navbar #navbar-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.navbar img {
+  width: 40px;
+  margin-top: .4rem;
+}
+.navbar #navbar-logo h2 {
+  margin-top: .6rem;
+}
+
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  margin-top: .5rem;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*showcase*/
+#Showcase {
+  background: #333 url("../img/hack.jpg") no-repeat center center/cover;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  color: #fff;
+  height: 100vh;
+}
+.showcase-content {
+  
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);    
+  width: 80%;
+  padding: 30px;
+  text-align: center;
+  
+}
+.showcase-content a {
+  margin-bottom: 70px;
+}
+/*what we do*/
+#product {
+  background: #333 url("../img/hack.jpg") no-repeat center center/cover;
+  
+  color: white;
+  min-height: 100%;
+}
+.productContainer {
+  text-align: center;
+  padding: 3rem;
+  height: 100%;
+}
+
+
+#item-list {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+#item-list #item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: .1rem;
+  text-align: center;
+  background: white;
+  color: black;
+  margin: 1rem;
+  padding: 1rem;
+  border: 3px black solid;
+  border-radius: 10px; 
+  transition: all .3s ease-in;
+  width: 50%;
+  
+}
+
+
+#item-list #item li
+ {
+  display: block;
+  padding-bottom: 2px;
+}
+#item-list #item:hover {
+  width: 60%;
+  background: black;
+  color: #f1f1f1;
+  border: 1px #fff dotted;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  
+}
+#item-list i {
+  
+  padding: .5rem;  
+}
+#item-list #item i:hover {
+  color: #fff;
+}
+
+.pm {
+  padding-bottom: 10px;
+}
+/*about section*/
+#about {
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #fff;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(68, 67, 67, 0.75), rgba(49, 49, 49, 0.75)), url("../img/hack.jpg") no-repeat center center/cover;
+}
+#about .testimonial {
+  padding: 30px 100px;
+}
+#about article h1 {
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+#about article h1:after {
+  content: "";
+  height: 5px;
+  width: 225px;
+  background-color: #fff;
+  display: block;
+  margin: auto;
+}
+article img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+article blockquote {
+  font-size: 20px;
+  margin-top: 30px;
+}
+article h5{
+  font-size: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+article p {
+  font-size: 17px;
+}
+/*contact section*/
+#contact {
+  height: 100%;
+}
+#contact #contact-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  
+
+  }
+#contact .map {
+  padding: 0 0;
+  margin: 0;
+  width: 100%;
+}
+#contact #form-content {
+  width: 100%;
+  padding: 1rem;
+}
+#contact .form-group label {
+  display: block;
+}
+#contact .contact-form input {
+  width: 100%;
+  padding: 0.6rem;
+}
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 3rem;
+}
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  background: rgb(7, 7, 7);
+  text-align: center;
+  padding: 1rem;
+}
+.social-media a {
+  color: #ccc;
+}
+.social-media i {
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  border: 1px rgba(66, 65, 65, 0.541) solid;
+  transition: all .4s ease-in;
+}
+.social-media i:hover {
+  border: 1px rgba(248, 243, 243, 0.541) solid;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  height: auto;
+  padding: 1rem;
+}

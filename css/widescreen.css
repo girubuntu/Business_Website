@@ -1,0 +1,17 @@
+/*align items*/
+#product .items .item {
+  display: flex;
+  text-align: left;
+}
+#product .items .item i {
+  align-self: center;
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+#contact .map {
+  flex: 2;
+  border: none;
+}
+#about .about-img {
+  max-width: 37%;
+}
