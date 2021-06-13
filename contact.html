@@ -35,8 +35,8 @@
   <section id="contact">
     <div class="contact-form bg-primary">
    
-    <div id="contact-content">
-        <form id="form-content">
+    <div id="contact-content"> 
+        <form id="form-content" action="POST" data-netlify="true">
           <h2 class="m-heading"><span class="text-secondary">Contact</span> us</h2>
           <p>Fill the form to Contact us</p>
             <div class="form-group">
@@ -55,6 +55,14 @@
                 <label for="name">Message</label>
                 <textarea name="message" id="message"></textarea>
             </div>
+            <div class="form-group">
+              <input type="myfile" name="myfile" id="myfile" placeholder="Upload File">
+          </div>
+          <div class="form-group">
+            <div>
+              data-netlify-recaptcha="true"
+            </div>
+          </div>
             <input type="submit" value="Send" class="btn btn-dark">
           
         </form>
